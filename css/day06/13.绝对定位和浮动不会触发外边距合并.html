@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动不会触发外边边距合并</title>
+	<style>
+		.father {
+			position: absolute;
+			width: 500px;
+			height: 500px;
+			background-color: pink;
+		}
+		.son {
+			width: 200px;
+			height: 200px;
+			background-color: purple;
+			margin-top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+	
+</body>
+</html>

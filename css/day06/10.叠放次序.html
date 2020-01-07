@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>叠放次序</title>
+	<style>
+		.damao,
+		.ermao,
+		.sanmao {
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+		.damao {
+			z-index: 2;
+		}
+		.ermao {
+			top: 50px;
+			left: 50px;
+			z-index: 1;
+			background-color: green;
+		}
+		.sanmao {
+			top: 100px;
+			left: 100px;
+			background-color: blue;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="damao"></div>
+	<div class="ermao"></div>
+	<div class="sanmao"></div>
+	
+</body>
+</html>
