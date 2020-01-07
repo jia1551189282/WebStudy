@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清除浮动之额外标签法</title>
+	<style>
+		.one {
+			width: 500px;
+			background-color: pink;
+		}
+		.damao {
+			float: left;
+			width: 200px;
+			height: 200px;
+			background-color: purple;
+		}
+		.ermao {
+			float: left;
+			width: 250px;
+			height: 250px;
+			background-color: skyblue;
+		}
+		.two {
+			width: 700px;
+			height: 150px;
+			background-color: #000;
+		}
+		/*清除左右的浮动*/
+		.clear {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="one">
+		<div class="damao"></div>
+		<div class="ermao"></div>
+		<div class="clear"></div>
+	</div>
+	<div class="two"></div>
+	
+</body>
+</html>
