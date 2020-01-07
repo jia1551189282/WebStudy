@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>优先级</title>
+	<style>
+		div {
+			color: pink;
+		}
+		.one {
+			color: blue;
+		}
+		#two {
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="one" id="two" style="color: yellow">
+		权重不同，显示的效果不同，会有覆盖的效果
+	</div>
+</body>
+</html>

@@ -5,19 +5,23 @@
 	<title>简单的导航栏</title>
 	<style>
 		a {
+			/*转换成行内块元素*/
 			display: inline-block;
 			width: 100px;
 			height: 30px;
+			/*行高等于高度  垂直居中*/
+			line-height: 30px;
 			background-color: pink;
+			text-align: center;
 			color: #fff;
 			text-decoration: none;
-			/*文字居中*/
-			text-align: center;
+			
 		}
 		a:hover {
-			color: yellow;
 			background-color: orange;
+			color: yellow;
 		}
+
 	</style>
 </head>
 <body>
@@ -25,7 +29,6 @@
 	<a href="#">体育</a>
 	<a href="#">汽车</a>
 	<a href="#">好用</a>
-
 	
 </body>
 </html>
