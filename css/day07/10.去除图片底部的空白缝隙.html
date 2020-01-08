@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>去除图片底部的空白缝隙</title>
+	<style>
+		div {
+			border: 1px solid red;
+		}
+		div img {
+			/*默认是基线对齐，所有底部有空白缝隙*/
+			/*vertical-align: baseline;*/
+			/*vertical-align: middle;*/
+			/*对于块状元素来说，vertical-align是无效的*/
+			/*display: block;*/
+		}
+	</style>
+</head>
+<body>
+
+
+	<div><img src="images/3.jpg" alt=""></div>
+</body>
+</html>

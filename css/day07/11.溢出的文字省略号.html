@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>溢出文字省略号</title>
+	<style>
+		div {
+			width: 150px;
+			height: 25px;
+			border: 1px solid pink;
+			/*强制文字一行内显示*/
+			white-space: nowrap;
+			/*溢出隐藏*/
+			overflow: hidden;
+			/*文字溢出 用省略号代替,elipsis 省略号*/
+			text-overflow: ellipsis;
+		}
+	</style>
+</head>
+<body>
+
+	<div>hi，你好hi，你好hi，你好hi，你好</div>
+</body>
+</html>
