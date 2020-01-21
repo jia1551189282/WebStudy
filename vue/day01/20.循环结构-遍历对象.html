@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>循环结构-遍历对象</title>
+	<script src="js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div v-if='v==13' v-for='(v,k,i) in obj'>{{v + '----' + k + '------' +　i}}</div>
+	</div>
+	
+
+	<script>
+		// 使用原生的js遍历对象
+		var obj = {
+			uname: 'list',
+			age: 12,
+			gender: 'male'
+		}
+		for(var key in obj){
+			console.log(key,obj[key]);
+		}
+
+		var vm = new Vue({
+			el: '#app',
+			data: {
+				obj: {
+					uname: 'zhangsan',
+					age: 13,
+					gender: 'female'
+				}
+			}
+		})
+
+	</script>
+</body>
+</html>

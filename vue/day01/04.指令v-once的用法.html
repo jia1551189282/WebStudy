@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>v-onde的用法</title>
+	<script src="js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div>{{msg}}</div>
+		<!-- v-once 标签 中的值只使用一次，后面就不再渲染了 -->
+		<div v-once>{{info}}</div> 
+	</div>
+
+	<script>
+		var vm = new Vue({
+			el: "#app",
+			data: {
+				msg: 'hello vue',
+				info: 'nihao'
+			}
+		});
+	</script>
+	
+</body>
+</html>

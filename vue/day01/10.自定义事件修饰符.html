@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义事件修饰符</title>
+	<script src="js/vue.js"></script>
+</head>
+<body>
+	<div id="app"><input type="text" v-on:keyup.aaa='handle' v-model='info'></div>
+	
+	<script>
+		Vue.config.keyCodes.aaa = 65;
+		var vm = new Vue({
+			el: '#app',
+			data: {
+				info: ''
+			},
+			methods: {
+				handle: function(event){
+					console.log(event.keyCode);
+					this.info = event.keyCode;
+				}
+			}
+		})
+	</script>
+</body>
+</html>

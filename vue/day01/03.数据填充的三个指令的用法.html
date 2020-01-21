@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数据填充相关3个指令方法</title>
+	<script src="js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div>{{msg}}</div>
+		<div v-text='msg'></div>
+		<div v-html='msg1'></div>
+		<div v-pre > {{msg}}</div>
+	</div>
+	<script>
+		var vm = new Vue({
+			el: "#app",
+			data: {
+				msg: 'hello Vue ',
+				msg1: '<h1>html</h1>'
+			}
+		});
+	
+	</script>
+
+</body>
+</html>
