@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>带参数的自定义指令</title>
+	<script src="js/vue.js"></script>
+</head>
+<body>
+	<div id="app"><input v-color='msg' type="text"></div>
+	
+	<script>
+		Vue.directive('color',{
+			bind: function(el,binding){
+				el.style.backgroundColor = binding.value.color;
+			}
+		});
+		var vm = new Vue({
+			el: '#app',
+			data: {
+				msg: {
+					color: 'blue'
+				}
+			},
+			methods: {
+				handle: function(){
+
+				}
+			}
+		});
+	</script>
+	
+</body>
+</html>
